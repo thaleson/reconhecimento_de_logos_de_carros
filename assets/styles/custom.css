@@ -1,0 +1,91 @@
+/* Estilização geral do aplicativo */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variáveis para temas */
+:root {
+    --background-color: #282c34; /* Escuro por padrão */
+    --text-color: #ffffff; /* Texto branco para o tema escuro */
+    --sidebar-background-color: #000000; /* Preto para o menu lateral */
+    --sidebar-text-color: #ffffff; /* Texto branco no menu lateral */
+    --nav-link-hover-color: #ff0000; /* Vermelho para hover no menu lateral */
+    --header-color: #ff0000; /* Vermelho para cabeçalhos */
+    --font-size-p: 1em; /* Tamanho padrão dos parágrafos */
+}
+
+[data-theme="light"] {
+    --background-color: #f0f2f6; /* Claro */
+    --text-color: #000000; /* Texto preto para o tema claro */
+    --sidebar-background-color: #ffffff; /* Branco para o menu lateral */
+    --sidebar-text-color: #000000; /* Texto preto no menu lateral */
+    --nav-link-hover-color: #ff0000; /* Vermelho para hover no menu lateral */
+    --header-color: #ff0000; /* Vermelho para cabeçalhos */
+}
+
+/* Estilização do título e cabeçalhos */
+h1, h2, h3, h4 {
+    color: var(--header-color);
+    font-weight: bold;
+    margin: 0; /* Remove margem padrão */
+    padding: 0;
+}
+
+/* Estilização dos parágrafos */
+p {
+    font-size: var(--font-size-p);
+    line-height: 1.6;
+    margin: 0 0 1.5em 0; /* Espaçamento inferior para parágrafos */
+}
+
+/* Estilização do menu lateral */
+.sidebar .sidebar-content {
+    background-color: var(--sidebar-background-color);
+    color: var(--sidebar-text-color);
+}
+
+.sidebar .sidebar-content .stSidebarNav > div {
+    border-bottom: 1px solid var(--nav-link-hover-color); /* Vermelho para a borda */
+}
+
+.sidebar .sidebar-content .stSidebarNav a {
+    color: var(--sidebar-text-color); /* Texto no menu lateral */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar .sidebar-content .stSidebarNav a:hover {
+    background-color: var(--sidebar-background-color); /* Preto para fundo no hover */
+    color: var(--nav-link-hover-color); /* Vermelho para texto no hover */
+}
+
+.stButton > button {
+    background-color: #ff0000; /* Vermelho para o botão */
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.stButton > button:hover {
+    background-color: #cc0000; /* Vermelho mais escuro para hover */
+}
+
+.stProgress {
+    background-color: #ff0000; /* Vermelho para a barra de progresso */
+}
+
+/* Estilização adicional */
+.sidebar .sidebar-content {
+    padding: 0; /* Remove padding padrão */
+    border-right: 2px solid var(--header-color); /* Linha de separação vermelha */
+}
+
+.sidebar .sidebar-content .stSidebarNav > div {
+    padding: 0; /* Remove padding padrão */
+}
