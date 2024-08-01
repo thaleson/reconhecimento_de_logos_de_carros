@@ -1,5 +1,7 @@
 # 🚗 **Reconhecimento de Logos de Carros Usando HOG e Machine Learning**
 
+site : https://reconhecimentodelogosdecarros.streamlit.app/
+
 ## 📜 Descrição
 
 Este projeto visa a detecção e reconhecimento de logos de carros utilizando **Histograma de Gradientes Orientados (HOG)** e um classificador **K-Nearest Neighbors (KNN)**. Utilizamos técnicas avançadas de visão computacional para extrair características visuais dos logos e classificá-los corretamente.
