@@ -86,3 +86,13 @@ p {
 .sidebar .sidebar-content .stSidebarNav > div {
     padding: 0; /* Remove padding padrão */
 }
+
+
+
+header {
+    visibility: hidden;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
