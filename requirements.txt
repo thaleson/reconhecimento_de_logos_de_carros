@@ -1,4 +1,4 @@
-﻿altair
+altair
 attrs
 blinker
 cachetools
